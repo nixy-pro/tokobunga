@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alyssa Florist menyediakan berbagai macam rangkaian bunga untuk berbagai acara di Bandung. Temukan bunga segar dan cantik di toko kami.">
+    <meta name="keywords" content="toko bunga, bunga segar, Alyssa Florist, rangkaian bunga, bunga Bandung">
+    <meta name="author" content="Alyssa Florist">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="google" content="nositelinkssearchbox">
+    <meta property="og:title" content="Toko Bunga - Alyssa Florist">
+    <meta property="og:description" content="Alyssa Florist menyediakan berbagai macam rangkaian bunga untuk berbagai acara di Bandung. Temukan bunga segar dan cantik di toko kami.">
+    <meta property="og:image" content="https://www.alyssaflorist.com/ico.png">
+    <meta property="og:url" content="https://www.alyssaflorist.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Toko Bunga - Alyssa Florist">
+    <meta name="twitter:description" content="Alyssa Florist menyediakan berbagai macam rangkaian bunga untuk berbagai acara di Bandung. Temukan bunga segar dan cantik di toko kami.">
+    <meta name="twitter:image" content="https://www.alyssaflorist.com/ico.png">
+    <title>Toko Bunga - Alyssa Florist</title>
+    <link rel="icon" href="https://www.alyssaflorist.com/ico.png" type="image/png">
+    <link rel="stylesheet" href="styles.css"> <!-- Asumsi ada file CSS terpisah -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            overflow: hidden;
+        }
+        header {
+            background-color: #f7cac9;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #fff;
+            text-shadow: 2px 2px 4px #000;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        main h2 {
+            font-size: 2em;
+            color: #444;
+            margin-bottom: 20px;
+        }
+        main p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #f77a6c;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #ff5a4e;
+        }
+        .flowers {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .flower {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-image: url('https://www.alyssaflorist.com/ico.png');
+            background-size: cover;
+            animation: float 10s linear infinite;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flowers">
+        <!-- Ini adalah bunga terbang yang diulang beberapa kali untuk memberikan efek terbang -->
+        <div class="flower" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="flower" style="left: 30%; animation-delay: 2s;"></div>
+        <div class="flower" style="left: 50%; animation-delay: 4s;"></div>
+        <div class="flower" style="left: 70%; animation-delay: 6s;"></div>
+        <div class="flower" style="left: 90%; animation-delay: 8s;"></div>
+    </div>
+    <header>
+        <h1>Selamat Datang di Toko Bunga Alyssa</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Bunga Segar dan Indah</h2>
+            <p>Alyssa Florist menyediakan berbagai macam rangkaian bunga segar untuk berbagai acara seperti pernikahan, ulang tahun, dan lainnya. Kami adalah pilihan terbaik untuk Anda yang mencari bunga segar dan indah di Bandung.</p>
+            <a href="https://www.alyssaflorist.com" class="btn">Lihat Katalog</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Alyssa Florist. All rights reserved.</p>
+    </footer>
+</body>
+</html>
